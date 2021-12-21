@@ -1,0 +1,211 @@
+
+/* 12. Dark Mode
+/* ---------------------------------------------------------- */
+
+/* If you prefer a dark color scheme, you can enable dark mode
+by adding the following code to the Head section of "Code Injection"
+settings inside: Ghost Admin > Settings > Advanced
+
+<script>document.documentElement.classList.add('dark-mode');</script>
+
+Or you can just edit default.hbs and add the .dark-mode class directly
+to the html tag on the very first line of the file.
+
+ */
+
+html.dark-mode body {
+    color: rgba(255, 255, 255, 0.75);
+    background: var(--colour-darkmode);
+}
+
+html.dark-mode img {
+    opacity: 0.9;
+}
+
+html.dark-mode .post-card,
+html.dark-mode .post-card:hover {
+    border-bottom-color: color-mod(var(--colour-darkmode) l(+8%));
+}
+
+html.dark-mode .post-card-byline-content a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .post-card-byline-content a:hover {
+    color: #fff;
+}
+
+html.dark-mode .post-card-image {
+    background: var(--colour-darkmode);
+}
+
+html.dark-mode .post-card-title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+html.dark-mode .post-card-excerpt {
+    color: color-mod(var(--colour-midgrey) l(+10%));
+}
+
+html.dark-mode .post-full-content {
+    background: var(--colour-darkmode);
+}
+
+html.dark-mode .article-title {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .article-excerpt {
+    color: color-mod(var(--colour-midgrey) l(+10%));
+}
+
+html.dark-mode .post-full-image {
+    background-color: color-mod(var(--colour-darkmode) l(+8%));
+}
+
+html.dark-mode .article-byline {
+    border-top-color: color-mod(var(--colour-darkmode) l(+15%));
+}
+
+html.dark-mode .article-byline-meta h4 a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .article-byline-meta h4 a:hover {
+    color: #fff;
+}
+
+html.dark-mode .no-image .author-social-link a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .gh-content h1,
+html.dark-mode .gh-content h2,
+html.dark-mode .gh-content h3,
+html.dark-mode .gh-content h4,
+html.dark-mode .gh-content h5,
+html.dark-mode .gh-content h6 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .gh-content pre {
+    background: color-mod(var(--colour-darkgrey) l(-8%));
+}
+
+html.dark-mode .gh-content :not(pre) > code {
+    background: color-mod(var(--colour-darkgrey) l(+6%));
+    border-color: color-mod(var(--colour-darkmode) l(+8%));
+    color: var(--colour-wash);
+}
+
+html.dark-mode .post-full-content a {
+    color: #fff;
+    box-shadow: inset 0 -1px 0 #fff;
+}
+
+html.dark-mode .post-full-content strong {
+    color: #fff;
+}
+
+html.dark-mode .post-full-content em {
+    color: #fff;
+}
+
+html.dark-mode .post-full-content code {
+    color: #fff;
+    background: #000;
+}
+
+html.dark-mode hr {
+    border-top-color: color-mod(var(--colour-darkmode) l(+8%));
+}
+
+html.dark-mode .post-full-content hr:after {
+    background: color-mod(var(--colour-darkmode) l(+8%));
+    box-shadow: var(--colour-darkmode) 0 0 0 5px;
+}
+
+html.dark-mode .gh-content figcaption {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+html.dark-mode .post-full-content table td:first-child {
+    background-image: linear-gradient(to right, var(--colour-darkmode) 50%, color-mod(var(--colour-darkmode) a(0%)) 100%);
+}
+
+html.dark-mode .post-full-content table td:last-child {
+    background-image: linear-gradient(to left, var(--colour-darkmode) 50%, color-mod(var(--colour-darkmode) a(0%)) 100%);
+}
+
+html.dark-mode .post-full-content table th {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: color-mod(var(--colour-darkmode) l(+8%));
+}
+
+html.dark-mode .post-full-content table th,
+html.dark-mode .post-full-content table td {
+    border: color-mod(var(--colour-darkmode) l(+8%)) 1px solid;
+}
+
+html.dark-mode .post-full-content .kg-bookmark-container,
+html.dark-mode .post-full-content .kg-bookmark-container:hover {
+    color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 1px rgba(255,255,255,0.9);
+}
+
+html.dark-mode .post-full-content input {
+    color: color-mod(var(--colour-midgrey) l(-30%));
+}
+
+html.dark-mode .kg-bookmark-title {
+    color: #fff;
+}
+
+html.dark-mode .kg-bookmark-description {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .kg-bookmark-metadata {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .site-archive-header .no-image {
+    color: rgba(255, 255, 255, 0.9);
+    background: var(--colour-darkmode);
+}
+
+html.dark-mode .subscribe-form {
+    border: none;
+    background: linear-gradient(color-mod(var(--colour-darkmode) l(-6%)), color-mod(var(--colour-darkmode) l(-3%)));
+}
+
+html.dark-mode .subscribe-form-title {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .subscribe-form p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+html.dark-mode .subscribe-email {
+    border-color: color-mod(var(--colour-darkmode) l(+6%));
+    color: rgba(255, 255, 255, 0.9);
+    background: color-mod(var(--colour-darkmode) l(+3%));
+}
+
+html.dark-mode .subscribe-email:focus {
+    border-color: color-mod(var(--colour-darkmode) l(+25%));
+}
+
+html.dark-mode .subscribe-form button {
+    opacity: 0.9;
+}
+
+html.dark-mode .subscribe-form .invalid .message-error,
+html.dark-mode .subscribe-form .error .message-error {
+    color: color-mod(var(--colour-red-dark) l(+5%) s(-5%));
+}
+
+html.dark-mode .subscribe-form .success .message-success {
+    color: color-mod(var(--colour-green) l(+5%) s(-5%));
+}

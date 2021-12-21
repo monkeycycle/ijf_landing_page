@@ -1,0 +1,41 @@
+
+:root {
+
+    /* Colours */
+    --colour-bg: #ffffff;
+	--colour-text: #111;
+	--colour-subtitle: rgba(0, 0, 0, .5);
+	--colour-border: rgba(0, 0, 0, .05);
+	--colour-component: #FFF;
+
+    --colour-black: #000000;
+    --colour-darkgrey: #15171A;
+    --colour-midgrey: #666666;
+    --colour-lightgrey: #c5d2d9;
+    --colour-wash: #e5eff5;
+    --colour-white: #ffffff;
+
+    --colour-red-dark: #B8292F;
+    --colour-red-light: #ff3333;
+
+    --colour-green: #a4d037;
+    --colour-yellow: #fecd35;
+    --colour-darkmode: #151719;
+
+
+
+    /*
+    An accent color is also set by Ghost itself in
+    Ghost Admin > Settings > Brand
+
+    --ghost-accent-color: {value};
+
+    You can use this variale throughout your styles
+     */
+
+    /* Fonts */
+    --font-sans-serif: 'Montserrat', sans-serif;
+    --font-serif: 'Frank Ruhl Libre', serif;
+    --font-mono: Menlo, Courier, monospace;
+
+}

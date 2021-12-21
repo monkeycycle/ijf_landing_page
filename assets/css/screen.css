@@ -1,0 +1,258 @@
+@import "global.css";
+@import "variables.css";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Frank Ruhl Libre",serif;
+    letter-spacing: .4px;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-top: 8rem; 
+    margin-bottom: 13rem;  
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;  
+}
+
+
+h2 {
+    font-size: 4rem;
+    margin-top: 6rem; 
+    margin-bottom: 1rem;    
+} 
+
+h3 {
+    margin-top: 0rem; 
+}
+
+.viewport {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #000000;
+    color: #ffffff; 
+}
+
+.site-content {
+    flex-grow: 1;
+}
+
+/* Full width page blocks */
+.outer {
+    position: relative;
+    padding: 0 4vmin;
+}
+
+/* Centered content container blocks */
+.inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.landing_leadviz.outer,
+.landing_pitch.outer,
+.landing_cta.outer,
+.landing_copy.outer,
+.landing_footer.outer {
+    margin-bottom: 6rem;
+}
+
+.landing_leadviz {
+    background: #ffffff;
+}
+
+.landing_pitch {
+    text-align: center;
+}
+
+.landing_cta {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
+.landing_cta strong {
+    color: #ff3333;
+}
+
+.logo {
+    max-width: 320px;
+}
+
+
+.serif {
+    font-family: "Frank Ruhl Libre",serif;
+}
+.sans-serif {
+    font-family: Montserrat, sans-serif;
+}
+
+.lighter {
+    font-weight: 400;
+}
+
+.landing_footer a {
+    color: #ffffff;
+}
+
+.landing_footer a:hover {
+    color: #ff3333;
+}
+
+.landing_cta .cta_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr .5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas:
+    "area1 area2";
+}
+
+.cta_form .form_field { grid-area: area1; }
+
+.cta_form .form_button { grid-area: area2; }
+
+
+
+.button#mc-embedded-subscribe {
+    color: rgb(255, 255, 255); 
+    background-color: rgb(184, 41, 47); 
+    opacity: 1; 
+    pointer-events: auto; 
+    height: 6rem; 
+    float: left; 
+    margin-left: 2rem; 
+    font-size: 2rem;
+    font-weight: 800;    
+}
+
+.button#mc-embedded-subscribe:active,
+.button#mc-embedded-subscribe:hover {
+    color: #000000; 
+    background-color: #979797; 
+}
+
+
+#mce-EMAIL {
+    color: #000000; 
+    font-size: 2rem; 
+    padding: 0 1rem; 
+    width: 80%; 
+    height: 5.5rem; 
+    float: right;   
+    border: 0; 
+}
+
+
+#mc-embedded-subscribe {
+    width: 80%; 
+    height: 5rem; 
+    float: left;
+    padding: 0; 
+    border: 0;
+}
+
+body.reverse-page .viewport {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.reverse-page .viewport .landing_footer, 
+body.reverse-page .viewport .landing_footer a {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+body.reverse-page .viewport p {
+    margin: 0 0 3rem 0;
+}
+
+
+
+.landing_copy .inner p {
+    display: block;
+    float: left;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;    
+}
+
+
+
+/* Typewriter effect */
+
+.typewriter h3 {
+    width: 80%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(184, 41, 47); }
+}
+
+.legal h2, 
+.legal h3 {
+    text-transform: uppercase;
+}
+
+
+/* Typewriter two */
+
+.var-highlight{
+  color: #C0AD60;
+}
+.string-highlight{
+  color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+    font-size: 2em;
+    margin: 0;
+    font-family: "Courier New";
+
+    &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}

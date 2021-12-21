@@ -1,0 +1,17 @@
+table.tablesaw {
+    font-size: .65em;
+    line-height: 1.2;
+}
+
+table tr,
+table.tablesaw tr {
+    vertical-align: bottom;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--colour-black);
+}
+
+table.tablesaw th {
+    font-weigth: 800;
+    text-transform: uppercase;
+}

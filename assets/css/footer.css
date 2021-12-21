@@ -1,0 +1,144 @@
+
+/* 11. Site Footer
+/* ---------------------------------------------------------- */
+
+
+.site-footer {
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    min-height: 200px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--colour-text);
+    background: var(--colour-white);
+}
+
+.site-footer .inner {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto;
+    color: rgba(255,255,255,1);
+    font-size: 1.3rem;
+}
+
+
+.site-footer .inner.inner-nav {
+    width: 100vw;   
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; 
+    color: rgba(255,255,255,1);
+    background: var(--color-black);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.site-footer a {
+    color: var(--colour-white);
+}
+
+.site-footer a:hover {
+    color: var(--colour-red-dark);
+    text-decoration: none;
+}
+
+.site-footer-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--colour-black);
+}
+
+
+.site-footer-nav ul {
+    display: flex;
+    flex-grow: 1;    
+    align-items: center;    
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--colour-black);
+}
+
+.site-footer-nav ul li {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 5em 0 0;
+    line-height: 2em;
+    background: var(--colour-black);
+    height: 100%;
+}
+
+.site-footer-nav ul li:last-child {
+  margin: 0;
+}
+
+.site-footer-nav a {
+    display: block;
+    position: relative;
+    align-items: center;
+    font-size: 1.1em;
+    color: var(--colour-white);
+    padding: 0 .5em;
+    height: 100%;
+}
+
+.site-footer-nav a:hover {
+    color: var(--colour-red-light);
+}
+
+
+.site-footer-nav li.nav-ijf-home a {
+    background-image: url("/assets/gfx/ijf-logo-whitelight.png");
+    background-repeat: no-repeat;
+    background-position: 50%;    
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+
+.site-footer .copyright {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--colour-black);
+    margin-top: 1em;
+    padding-top: 1em;    
+    color: var(--colour-text);
+    /* letter-spacing: -0.015em; */
+    font-size: 1em;
+    font-weight: 500;    
+}
+
+.site-footer .copyright a {
+    color: var(--colour-text);
+    /* letter-spacing: -0.015em; */
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.site-footer .copyright a:hover {
+    color: var(--colour-red-dark);
+}
+
+
+@media (max-width: 800px) {
+    .site-footer .inner {
+        /* max-width: 500px; */
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        text-align: center;
+    }
+    .site-footer .copyright,
+    .site-footer .copyright a {
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
