@@ -225,10 +225,10 @@ body.reverse-page .viewport p {
 /* Typewriter two */
 
 .var-highlight{
-  color: #C0AD60;
+  color: rgb(184, 41, 47);
 }
 .string-highlight{
-  color: rgba(253, 149, 90, 0.8);
+  color:  rgb(184, 41, 47);
 }
 
 #typewriter{
@@ -238,7 +238,7 @@ body.reverse-page .viewport p {
 
     &:after{
       content: "|";
-      animation: blink 500ms linear infinite alternate;
+      animation: blink 750ms linear infinite alternate;
     }
 }
 
@@ -256,3 +256,10 @@ body.reverse-page .viewport p {
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(184, 41, 47); }
+}
+
