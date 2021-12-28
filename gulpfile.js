@@ -89,11 +89,40 @@ function zipper(done) {
     ], handleError(done));
 }
 
+function bundle(done) {
+    pump([
+        src([
+            'assets/built/*'
+        ], {sourcemaps: true}),
+        dest('bundle/assets/built/', {sourcemaps: '.'})
+    ], handleError(done));
+
+    pump([
+        src([
+            'assets/gfx/*'
+        ], {sourcemaps: true}),
+        dest('bundle/assets/gfx/')
+    ], handleError(done));
+
+    pump([
+        src([
+            '**/*.html',
+            '!node_modules/**/*.html'
+        ], {sourcemaps: true}),
+        dest('bundle')
+    ], handleError(done));
+
+}
+
+
 const cssWatcher = () => watch('assets/css/**', css);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, hbsWatcher);
 const build = series(css, js);
+const deploy_bundle = series(css, js, bundle)
 
+
+exports.deploy = deploy_bundle;
 exports.build = build;
 exports.zip = series(build, zipper);
 exports.default = series(build, serve, watcher);
