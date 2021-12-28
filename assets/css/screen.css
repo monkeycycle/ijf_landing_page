@@ -1,6 +1,7 @@
 @import "global.css";
 @import "variables.css";
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Frank Ruhl Libre",serif;
     letter-spacing: .8px;   
@@ -247,9 +248,7 @@ body.reverse-page .viewport p {
 }
 
 #typewriter{
-    font-size: 2em;
     margin: 0;
-    font-family: "Courier New";
     /* animation:  */
     /* blink-caret .75s step-end infinite,         */
     &:after{
@@ -282,10 +281,6 @@ body.reverse-page .viewport p {
 }
 
 /* NAVIGATION MENU */
-
-
-/* 5. Site Navigation
-/* ---------------------------------------------------------- */
 
 .gh-head {
     z-index: 20;
@@ -520,4 +515,131 @@ dl {
     display: block;
     float: left;
     width: 100%;
+}
+
+.landing_copy .inner p,
+.landing_copy .inner li  {
+    color: #cccccc;
+}
+
+.landing_copy .inner p strong,
+.landing_copy .inner li strong{      
+    color: #ffffff;
+    font-weight: 900;
+}
+   
+
+/* Social icons */
+
+.gh-social {
+    display: block;
+    float: left;
+    margin-top: 2rem;  
+    width: 100%;
+    text-align: center;
+}
+
+.gh-social a + a {
+    margin-left: 1rem;
+}
+
+.gh-social a, 
+.gh-social a:hover {
+    display: inline-block;    
+    width: 32px; 
+    height: 32px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    opacity: 1;
+    fill: var(--colour-white);
+}
+ 
+.gh-social a:hover svg {
+    fill: var(--colour-red-light);
+}
+
+.gh-social svg {
+    height: 32px;
+    width: 32px;
+}
+
+
+
+/* Misc Mobile */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: bold;
+    }
+
+    p, li { 
+        font-size: .9rem; 
+    }
+
+    #mc-embedded-subscribe {
+        font-size: 16px;
+    }
+
+    .gh-head-logo {
+        display: block;
+        float: left;        
+        width: 100%;
+        text-align: center;
+    }
+
+    .gh-head-brand {
+        display: inline-block;
+        float: left;
+        width: 45% !important;
+    }
+
+    .gh-head-logo img,
+    .logo {
+        max-width: 250px;
+
+    }
+
+    .landing_pitch .inner #typewriter h1, 
+    .landing_pitch .inner #typewriter h3 {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        } 
+
+    .landing_pitch .inner #typewriter h3 + h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;        
+    }   
+
+    .landing_pitch .inner #typewriter span {
+        margin: 0;
+    }
+
+    .gh-head {
+        padding: 0 2vmin;
+    }
+
+    .gh-head-menu {
+        margin: 0;
+    }   
+
+    .gh-head-menu .nav li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        line-height: 1;
+    }         
+
 }

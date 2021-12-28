@@ -450,25 +450,3 @@ h6 {
     font-size: 1.8rem;
 }
 
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.1rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    p, li { 
-        font-size: .9rem; 
-    }
-
-    #mc-embedded-subscribe {
-        font-size: 16px;
-    }
-}
