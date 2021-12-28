@@ -513,3 +513,11 @@ a.gh-head-button:hover {
     float: left;
     display: inline-block;
 }
+
+ul,
+ol,
+dl {
+    display: block;
+    float: left;
+    width: 100%;
+}
