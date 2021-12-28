@@ -99,7 +99,8 @@ function bundle(done) {
 
     pump([
         src([
-            'assets/gfx/*'
+            'assets/gfx/*',
+            'assets/gfx/**/*'
         ], {sourcemaps: true}),
         dest('bundle/assets/gfx/')
     ], handleError(done));
