@@ -55,18 +55,11 @@
 
 
 
-        <center id="typewriter">
-          <h1>We’re building the future
-            of Canadian journalism.</h1>
-
-          <h3 class="sans-serif">
-            Digital-first. Radically transparent. 
-          </h3>
-          <h3 class="sans-serif">
-            Laser-focused on serving the public and speaking truth to power.            
-          </h3>  
-
-        </center>      
+<center id="typewriter">
+<h1>We’re building the future of Canadian journalism.</h1>
+<h3 class="sans-serif">Digital-first. Radically transparent.</h3>
+<h3 class="sans-serif">Laser-focused on serving the public and speaking truth to power.</h3>  
+</center>      
 
         </div>
       </div>
@@ -172,12 +165,12 @@
             tag = "",
             writingTag = false,
             tagOpen = false,
-            typeSpeed = 40,
+            typeSpeed = 65,
           tempTypeSpeed = 0;
 
         var type = function() {
           
-            console.log("cursorPosition::: " + cursorPosition);
+            // console.log("cursorPosition::: " + cursorPosition + " ==> " + HTML[cursorPosition]);
 
             if (writingTag === true) {
                 tag += HTML[cursorPosition];
