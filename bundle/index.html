@@ -100,10 +100,10 @@
           <p>
             The Investigative Journalism Foundation (IJF) will expand the breadth, depth, and long-term financial sustainability of investigative journalism in Canada. Although there are already a handful of outlets producing reporting on specific topics, <strong>Canada does not have a dedicated, audience-supported, central bureau of investigative journalism, like ProPublica in the United States. The IJF will fill that gap.</strong> We strongly believe that our work will enhance the right to know of Canadians from coast to coast to coast.
           </p>
-          <h2>Our Databases</h2>          
           <p>
             The power of the internet makes it easier for us to combine the beauty of code with the principles of journalism to create public interest databases. <strong>We’re launching with three databases: One on who donates to politicians nationwide, one on who lobbies them, and one revealing detailed financial information for charities.</strong>
           </p>
+          <h2>Our Databases</h2>          
           <p>
             The political donations database includes 6 million donations made to elected representatives at the federal level and in every province and territory over the past 30 years. The lobbyist database includes detailed information on how the largest and most powerful organizations are looking to shape Canada. The charities database offers unparalleled detail into the tax returns of every Canadian charity going back to 1990. <strong>These databases will make it easy to answer questions like: Who donates the most to each politician nationwide? Which lobbyists get the most meetings? Which charities raise the most money?</strong>
           </p>
@@ -177,6 +177,8 @@
 
         var type = function() {
           
+            console.log("cursorPosition::: " + cursorPosition);
+
             if (writingTag === true) {
                 tag += HTML[cursorPosition];
             }
