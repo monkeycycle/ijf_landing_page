@@ -113,6 +113,13 @@ function bundle(done) {
         dest('bundle')
     ], handleError(done));
 
+    pump([
+        src([
+            '*.png', '*.ico', '*.svg'
+        ], {sourcemaps: true}),
+        dest('bundle/')
+    ], handleError(done));
+
 }
 
 
