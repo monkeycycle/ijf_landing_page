@@ -591,8 +591,8 @@ dl {
         font-size: .9rem; 
     }
 
-    #mc-embedded-subscribe {
-        font-size: 14px;
+    .form_button #mc-embedded-subscribe {
+        font-size: 1.5rem;
     }
 
     .gh-head-logo {
