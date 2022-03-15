@@ -8,6 +8,4 @@ Run `npm install` for dependencies.
 
 `gulp deploy` to run dev/deploy tasks and generate a `bundle/` package. Landing site deploys when a new bundle is pushed to GitHub.
 
-Node or Python http-server to serve it all up.
-
-
+Node or Python http-server to serve it all up during local dev.
